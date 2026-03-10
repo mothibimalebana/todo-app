@@ -8,3 +8,6 @@ class Task(models.Model):
     user = User
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
+
+    def __str__(self):
+        return self.title
